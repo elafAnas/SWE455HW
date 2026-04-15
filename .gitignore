@@ -1,0 +1,6 @@
+@"
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.exe
+"@ | Out-File -Encoding utf8 .gitignore

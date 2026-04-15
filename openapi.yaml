@@ -1,0 +1,17 @@
+swagger: "2.0"
+info:
+  title: pi-api
+  version: 1.0.0
+
+schemes:
+  - https
+
+paths:
+  /estimate_pi:
+    post:
+      operationId: estimatePi
+      x-google-backend:
+        address: https://service1-e55uxw2gta-uc.a.run.app/estimate_pi
+      responses:
+        "202":
+          description: Accepted
